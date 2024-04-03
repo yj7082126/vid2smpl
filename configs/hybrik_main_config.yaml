@@ -1,0 +1,32 @@
+TYPE: 'HRNetSMPLXCamKidReg'
+HR_PRETRAINED: './pose_hrnet_w48_256x192.pth'
+PRETRAINED: './checkpoints/hybrik/hybrikx_rle_hrnet.pth'
+SMPL_MODEL_PATH: './checkpoints/smplx/SMPLX_NEUTRAL.npz'
+KID_TEMPLATE_PATH: './checkpoints/smplx/smplx_kid_template.npy'
+HRNET_CONFIG_PATH: './models/hybrik'
+TRY_LOAD: ''
+RESUME: ''
+FOCAL_LENGTH: 1000
+IMAGE_SIZE:
+- 256
+- 256
+HEATMAP_SIZE:
+- 64
+- 64
+NUM_JOINTS: 71
+HRNET_TYPE: 48
+EXTRA:
+  SIGMA: 2
+  BACKBONE: 'resnet'
+  CROP: 'padding'
+  AUGMENT: 'none'
+  PRESET: 'simple_smpl_3d_cam'
+  DEPTH_DIM: 64
+  HAND_REL: True
+  USE_KID: True
+POST:
+  NORM_TYPE: 'softmax'
+BBOX_3D_SHAPE:
+  - 2200
+  - 2200
+  - 2200

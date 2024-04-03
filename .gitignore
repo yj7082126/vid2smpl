@@ -1,0 +1,6 @@
+**.pyc
+checkpoints/*
+!checkpoints/Place_model_files_here.txt
+
+*.ipynb
+outputs/
