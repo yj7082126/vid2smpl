@@ -1,6 +1,6 @@
-# vid2smpl
+# Vid2smpl
 
-[![sample_01006](data/test1.png)](data/test1.mp4)
+![test1](data/test1-gif.gif)
 
 ## Overview
 
@@ -81,7 +81,7 @@ The output is designed to be compatible with Champ, and you can simply change th
 
 Example Output Video from Champ, directly from the extracted results:
 
-[![sample_01006](data/test2.png)](data/test2.mp4)
+![test2](data/test2-gif.gif)
 
 ## To-do
 
